@@ -85,7 +85,7 @@ public:
     }
     template <typename Head>
     void print(std::stringstream& stream, Head head) {
-        std::clog << head << stream.str();  // keep it buffered on purpose
+        std::clog << "KP Added in views " << head << stream.str();  // keep it buffered on purpose
     }
     template <typename Head, typename... Tail>
     void print(std::stringstream& stream, Head head, Tail... tail) {
@@ -100,7 +100,7 @@ public:
     template <typename Head>
     void printLine(std::stringstream& stream, Head head) {
         stream << head << std::endl;
-        std::clog << stream.str() << std::flush;  // make it line-buffered
+        std::clog << stream.str() << "KP Added in views " << std::flush;  // make it line-buffered
     }
     template <typename Head, typename... Tail>
     void printLine(std::stringstream& stream, Head head, Tail... tail) {
