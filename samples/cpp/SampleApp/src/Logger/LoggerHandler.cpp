@@ -77,6 +77,7 @@ bool LoggerHandler::logEvent(
             }
             if (!key.empty()) {
                 console->printLine(source, key, message);
+                std::cout << "KP customlog" << " " << message;
                 return true;
             }
         }
